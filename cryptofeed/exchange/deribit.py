@@ -20,6 +20,7 @@ class Deribit(Feed):
     def __init__(self, **kwargs):
         super().__init__('wss://www.deribit.com/ws/api/v2', **kwargs)
 
+        # this is a test
         pairs = None
         if self.subscription:
             subscribing_instruments = list(self.subscription.values())
