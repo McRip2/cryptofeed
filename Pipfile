@@ -25,7 +25,7 @@ cchardet = "*"              # cchardet is a faster replacement for chardet
 # --- Optional dependencies ------------------------------------------------------------------
 aiofile = ">=2.0.0"         # used by util/async_file.py
 aiokafka = "*"              # pip install cryptofeed[kafka]
-aioredis = "*"              # pip install cryptofeed[redis]
+aioredis = {git = "https://github.com/aio-libs/aioredis-py.git", editable = true}              # pip install cryptofeed[redis]
 arctic = "*"                # pip install cryptofeed[arctic]
 asyncpg = "*"               # pip install cryptofeed[postgres]
 motor = "*"                 # pip install cryptofeed[mongo]
